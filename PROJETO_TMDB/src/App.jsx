@@ -7,8 +7,7 @@ function App() {
   return (
     <div className='App'>
     <Navbar />
-   <h2>My First React App</h2>
-   <Outlet />
+    <Outlet />
    </div>
   );
 }
