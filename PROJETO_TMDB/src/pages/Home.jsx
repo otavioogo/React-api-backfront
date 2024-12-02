@@ -10,7 +10,7 @@ const Home = () => {
 
   const [ topMovies, setTopMovies ] = useState([])
 
-  const getTopRateedMovies = async (url) => {
+  const getTopRatedMovies = async (url) => {
     const res = await fetch(url)
     const data = await res.json()
 
@@ -20,7 +20,7 @@ const Home = () => {
   useEffect(() => {
 
     const topRatedUrl = `${moviesURL}top_rated?${apiKey}`
-    getTopRateedMovies(topRatedUrl)
+    getTopRatedMovies(topRatedUrl)
     
   }, [])
 
